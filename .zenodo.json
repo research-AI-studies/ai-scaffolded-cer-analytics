@@ -14,5 +14,12 @@
     "conversational agents",
     "pre-registration",
     "learning analytics"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.21408917",
+      "relation": "isVersionOf",
+      "scheme": "doi"
+    }
   ]
 }

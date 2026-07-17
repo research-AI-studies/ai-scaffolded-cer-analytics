@@ -1,5 +1,7 @@
 # InquiTrace: A Reproducible Platform and Learning-Analytics Pipeline for Diagnosing the CER Reasoning Gap in AI-Scaffolded Primary Science Inquiry
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21408917.svg)](https://doi.org/10.5281/zenodo.21408917)
+
 This repository contains the **code-only, public** artifacts for the InquiTrace
 research program: the inquiry-platform design, the CER-aligned instrumentation
 schema, a hybrid (LLM + rule-based) scaffolding-agent specification, and a fully
@@ -44,3 +46,12 @@ python src/analyze.py          # writes outputs/results.json
 The example cohort is included for reproducibility. No real or processed pupil
 data is distributed. A versioned snapshot of this public code is archived on
 Zenodo (cite the concept DOI).
+
+## Citation
+Please cite the **concept DOI**, which always resolves to the latest version:
+
+> research-AI-studies (2026). *InquiTrace: A Reproducible Platform and
+> Learning-Analytics Framework for the CER Reasoning Gap in AI-Scaffolded
+> Primary Science Inquiry*. Zenodo. https://doi.org/10.5281/zenodo.21408917
+
+Machine-readable metadata is in `CITATION.cff`.
