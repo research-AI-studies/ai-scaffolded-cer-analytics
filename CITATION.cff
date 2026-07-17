@@ -6,7 +6,7 @@ authors:
   - name: "research-AI-studies"
 repository-code: "https://github.com/research-AI-studies/ai-scaffolded-cer-analytics"
 license: MIT
-version: 0.1.0
+version: 0.1.1
 date-released: "2026-07-17"
 keywords:
   - intelligent tutoring systems
