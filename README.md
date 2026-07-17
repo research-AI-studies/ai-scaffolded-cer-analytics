@@ -1,4 +1,4 @@
-# A Reproducible Platform and Learning-Analytics Framework for Diagnosing the Claim–Evidence–Reasoning Gap in AI-Scaffolded Primary Science Inquiry
+# An Open Learning-Analytics Platform and Pre-Registered Protocol for Studying LLM Conversational Scaffolding of Evidence-Based Reasoning in Primary Science
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21408917.svg)](https://doi.org/10.5281/zenodo.21408917)
 
@@ -17,14 +17,22 @@ pipeline runs end-to-end. Real classroom data, once collected, will be placed in
 
 ## Repository layout
 ```
-inquitrace-cer-study/
-├── generate_example.py     # produces the public example cohort
-├── src/analyze.py          # analytics pipeline -> outputs/results.json
+ai-scaffolded-cer-analytics/
+├── generate_example.py       # produces the public example cohort
+├── src/
+│   ├── analyze.py            # pipeline orchestrator -> outputs/results.json
+│   ├── agent_policy.py       # deterministic fallback scaffolding policy
+│   ├── clustering.py         # engagement clustering
+│   ├── sequence_analysis.py  # trajectory / transition analysis
+│   ├── qa_coding.py          # Q&A coding scheme
+│   ├── make_figures.py       # figures (offline)
+│   └── make_tables.py        # tables (offline)
 ├── data/
-│   ├── example/            # PUBLIC illustrative cohort (not real)
-│   └── private/            # OFFLINE real data (git-ignored; empty here)
-├── outputs/results.json    # single source of truth (generated; git-ignored)
-├── MANUSCRIPT_PLAN.md       # reframed paper structure and claims
+│   ├── example/              # PUBLIC illustrative cohort (not real)
+│   └── private/              # OFFLINE real data (git-ignored; empty here)
+├── docs/schema_crosswalk.md  # stage->CER and data-model crosswalk
+├── tests/                    # pytest suite
+├── outputs/results.json      # single source of truth (generated; git-ignored)
 └── .gitignore
 ```
 
@@ -50,8 +58,9 @@ Zenodo (cite the concept DOI).
 ## Citation
 Please cite the **concept DOI**, which always resolves to the latest version:
 
-> research-AI-studies (2026). *InquiTrace: A Reproducible Platform and
-> Learning-Analytics Framework for the CER Reasoning Gap in AI-Scaffolded
-> Primary Science Inquiry*. Zenodo. https://doi.org/10.5281/zenodo.21408917
+> research-AI-studies (2026). *An Open Learning-Analytics Platform and
+> Pre-Registered Protocol for Studying LLM Conversational Scaffolding of
+> Evidence-Based Reasoning in Primary Science*. Zenodo.
+> https://doi.org/10.5281/zenodo.21408917
 
 Machine-readable metadata is in `CITATION.cff`.

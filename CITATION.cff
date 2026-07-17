@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it using the metadata below."
-title: "A Reproducible Platform and Learning-Analytics Framework for Diagnosing the Claim–Evidence–Reasoning Gap in AI-Scaffolded Primary Science Inquiry"
+title: "An Open Learning-Analytics Platform and Pre-Registered Protocol for Studying LLM Conversational Scaffolding of Evidence-Based Reasoning in Primary Science"
 type: software
 authors:
   - name: "research-AI-studies"
@@ -9,10 +9,10 @@ license: MIT
 version: 0.1.1
 date-released: "2026-07-17"
 keywords:
+  - scientific argumentation
   - intelligent tutoring systems
   - cognitive load theory
   - educational data mining
-  - conversational agents
-  - pre-registration
+  - human–AI interaction
 # Concept DOI (always resolves to the latest version).
 doi: "10.5281/zenodo.21408917"
