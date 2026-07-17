@@ -58,9 +58,6 @@ Zenodo (cite the concept DOI).
 ## Citation
 Please cite the **concept DOI**, which always resolves to the latest version:
 
-> research-AI-studies (2026). *An Open Learning-Analytics Platform and
-> Pre-Registered Protocol for Studying LLM Conversational Scaffolding of
-> Evidence-Based Reasoning in Primary Science*. Zenodo.
 > https://doi.org/10.5281/zenodo.21408917
 
 Machine-readable metadata is in `CITATION.cff`.
