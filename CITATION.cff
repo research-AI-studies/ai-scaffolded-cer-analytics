@@ -1,10 +1,10 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it using the metadata below."
-title: "InquiTrace: A Reproducible Platform and Learning-Analytics Framework for the CER Reasoning Gap in AI-Scaffolded Primary Science Inquiry"
+title: "A Reproducible Platform and Learning-Analytics Framework for Diagnosing the Claim–Evidence–Reasoning Gap in AI-Scaffolded Primary Science Inquiry"
 type: software
 authors:
   - name: "research-AI-studies"
-repository-code: "https://github.com/research-AI-studies/inquitrace-cer-study"
+repository-code: "https://github.com/research-AI-studies/ai-scaffolded-cer-analytics"
 license: MIT
 version: 0.1.0
 date-released: "2026-07-17"

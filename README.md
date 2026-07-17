@@ -1,4 +1,4 @@
-# InquiTrace: A Reproducible Platform and Learning-Analytics Pipeline for Diagnosing the CER Reasoning Gap in AI-Scaffolded Primary Science Inquiry
+# A Reproducible Platform and Learning-Analytics Framework for Diagnosing the Claim–Evidence–Reasoning Gap in AI-Scaffolded Primary Science Inquiry
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21408917.svg)](https://doi.org/10.5281/zenodo.21408917)
 

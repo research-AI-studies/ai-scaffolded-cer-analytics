@@ -1,5 +1,5 @@
 {
-  "title": "InquiTrace: A Reproducible Platform and Learning-Analytics Framework for the CER Reasoning Gap in AI-Scaffolded Primary Science Inquiry",
+  "title": "A Reproducible Platform and Learning-Analytics Framework for Diagnosing the Claim–Evidence–Reasoning Gap in AI-Scaffolded Primary Science Inquiry",
   "upload_type": "software",
   "description": "Code-only, public artifacts for the InquiTrace research program: a CER-instrumented inquiry-platform design, a hybrid LLM + rule-based scaffolding-agent specification, and a reproducible learning-analytics pipeline. Ships a clearly labelled, non-real example cohort for end-to-end reproducibility. No real pupil data is distributed.",
   "license": "MIT",
