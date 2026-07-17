@@ -1,4 +1,4 @@
-# An Open Learning-Analytics Platform and Pre-Registered Protocol for Studying LLM Conversational Scaffolding of Evidence-Based Reasoning in Primary Science
+
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21408917.svg)](https://doi.org/10.5281/zenodo.21408917)
 
