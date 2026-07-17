@@ -16,10 +16,16 @@ Example-cohort outputs must NEVER be reported as empirical findings.
 from __future__ import annotations
 
 import json
+import sys
 from pathlib import Path
 
 import pandas as pd
 from scipy import stats
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import clustering  # noqa: E402
+import qa_coding  # noqa: E402
+import sequence_analysis  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 PRIVATE = ROOT / "data" / "private"
@@ -30,7 +36,7 @@ OUT = ROOT / "outputs"
 
 
 def load() -> dict[str, pd.DataFrame]:
-    return {
+    data = {
         "groups": pd.read_csv(DATA / "groups.csv"),
         "decisions": pd.read_csv(DATA / "agent_decisions.csv"),
         "source": pd.read_csv(DATA / "agent_decision_source.csv"),
@@ -38,6 +44,11 @@ def load() -> dict[str, pd.DataFrame]:
         "misc": pd.read_csv(DATA / "misconceptions.csv"),
         "qa": pd.read_csv(DATA / "qa_exchanges.csv"),
     }
+    events_path = DATA / "interaction_events.csv"
+    qa_detail_path = DATA / "qa_exchanges_detail.csv"
+    data["events"] = pd.read_csv(events_path) if events_path.exists() else None
+    data["qa_detail"] = pd.read_csv(qa_detail_path) if qa_detail_path.exists() else None
+    return data
 
 
 def descriptives(groups: pd.DataFrame) -> dict:
@@ -167,7 +178,13 @@ def main() -> None:
         "cer_completion": cer(df["cer"]),
         "misconceptions": misconceptions(df["misc"]),
         "qa_exchanges": qa(df["qa"]),
+        "clustering": clustering.assign_clusters(df["groups"]),
     }
+    if df["events"] is not None:
+        results["sequence_analysis"] = sequence_analysis.analyse(df["events"])
+    if df["qa_detail"] is not None:
+        rows = df["qa_detail"].to_dict("records")
+        results["qa_coding"] = qa_coding.code_all(rows)
 
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "results.json").write_text(json.dumps(results, indent=2), encoding="utf-8")
