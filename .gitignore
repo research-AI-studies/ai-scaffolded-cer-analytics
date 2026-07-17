@@ -1,0 +1,15 @@
+# Real / processed study data stays offline and private (NEVER pushed).
+# The public example cohort under data/example/ is intentionally NOT ignored.
+data/private/
+
+# Generated analysis artifacts (regenerated from the pipeline).
+outputs/
+__pycache__/
+*.pyc
+
+# Manuscript & supplementary files are kept offline.
+*.docx
+*.pdf
+figures/
+tables/
+MANUSCRIPT_PLAN.md

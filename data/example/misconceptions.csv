@@ -1,0 +1,5 @@
+error_type,label,count
+Type I,Loam overgeneralisation,5
+Type II,Stickiness overextension,6
+Type III,Drainage misconception,5
+Type IV,Random guessing,4

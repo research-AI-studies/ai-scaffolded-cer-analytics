@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "InquiTrace: A Reproducible Platform and Learning-Analytics Framework for the CER Reasoning Gap in AI-Scaffolded Primary Science Inquiry"
+type: software
+authors:
+  - name: "research-AI-studies"
+repository-code: "https://github.com/research-AI-studies/inquitrace-cer-study"
+license: MIT
+version: 0.1.0
+date-released: "2026-07-17"
+keywords:
+  - intelligent tutoring systems
+  - cognitive load theory
+  - educational data mining
+  - conversational agents
+  - pre-registration
+# Concept DOI (resolves to the latest version). Update after first Zenodo release.
+doi: "10.5281/zenodo.PLACEHOLDER"

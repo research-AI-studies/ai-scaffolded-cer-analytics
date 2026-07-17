@@ -1,0 +1,11 @@
+group,completion_rate,agent_decisions,help_requests,post_test_errors,probe_ratio,cluster
+G1,0.84,8,1,1,0.625,Independent
+G2,0.83,18,4,0,0.778,Moderate
+G3,0.87,15,6,0,0.6,Moderate
+G4,0.82,18,11,5,0.167,Heavy dependent
+G5,0.84,27,7,1,0.37,Moderate
+G6,0.84,24,12,0,0.333,Moderate
+G7,0.91,122,2287,2,0.033,Heavy dependent
+G8,0.84,12,2,2,0.167,Independent
+G9,0.85,22,2,4,0.273,Independent
+G10,0.8,15,10,0,0.267,Moderate

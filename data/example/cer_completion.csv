@@ -1,0 +1,7 @@
+component,stage,metric,completed,total
+Claim,S2,claim_formulated,10,10
+Claim+Evidence,S2,justification_provided,6,10
+Evidence-Observation,S1/S3/S4,records_complete,10,10
+Evidence-Interpretation,S5,seeBox_thinkBox_filled,10,10
+Reasoning,S5,explain_field_filled,0,10
+Conclusion-Crops,S6,crop_matching_complete,10,10
